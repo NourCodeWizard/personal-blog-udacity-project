@@ -150,6 +150,55 @@ p code{
 }
 @media screen and (max-width: 1130px){
     .sidebar{
+        order: 1;
+    }
+}
+@media screen and (max-width: 949px){
+    .sidebar{
         display: none;
     }
+    .content{
+        width: 100%;
+        align-self: center;
+    }
+    #one{
+        font-size: 1.5rem;
+    }
+    .article-box{
+        width: 100%;
+    }
+    .article-box img{
+        width: 100%;
+    }
+    #style-img{
+        width: 100%;
+    }
+    .related-articles{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 669px){
+    .info img{
+        width: 10%;
+        height: 10%;
+    }
+
+    .header-style{
+        position: static;
+    }
+    .related-articles{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lr{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 421px){
+    .info img{
+        width: 15%;
+        height: 15%;
+    }
+
 }
