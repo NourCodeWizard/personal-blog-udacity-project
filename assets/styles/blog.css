@@ -1,0 +1,155 @@
+.header-style{
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 0.2px #fffff1c6 solid;;
+}
+.logo{
+    padding-left: 2rem ;
+}
+
+/* side bar */
+.page{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0 2rem;
+    gap: 2rem;
+}
+.sidebar{
+    position: sticky;
+    top: 50px;
+    height: calc(100vh - 65.6px);
+    flex: 0 0 250px;
+    overflow-y: auto;
+}
+.article-links h2{
+    padding: 1.2rem 0;
+}
+.article-links li{
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+.article-links li a{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #b7b7b7;
+}
+.article-links ul{
+ border-left: 1px solid #b7b7b7;
+    
+}
+.article-links li a:hover{
+    color: #8cb4ff;
+}
+/* main content */
+
+/* intro of article */
+.content{
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    width: 80%;
+}
+
+#style-img{
+    width: 80%;
+    border-radius: 5px;
+}
+#one{
+    padding: 1rem 0;
+    font-size: 2.5rem;
+}
+.info{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+.info img{
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+}
+.info a{
+    font-weight: bold;
+    color: #8cb4ff;
+    text-decoration: underline;
+}
+.icon::after{
+    content: "  ";
+    display: inline-flex;
+    background-image: url("https://developer.mozilla.org/static/media/external.ad7e40a95bc765963433.svg");
+    mask-size: cover;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+/* first article */
+.article-box{
+    width: 80%;
+}
+.article-box img{
+    width: 100%;
+    border-radius: 5px;
+}
+.article-box p{
+    padding: 1rem  0 2rem 0;
+    
+    font-size: 1.1rem;
+}
+.article-box h1{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.article-box h1:hover{
+    text-decoration: underline;
+}
+.article-box p a , .blue{
+    color: #8cb4ff;
+    text-decoration: underline;
+}
+.section-box h2{
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+.section-box h2:hover{
+    text-decoration: underline;
+}
+p code{
+    background-color: #343434;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-family: monospace;
+}
+.related-articles{
+    display: flex;
+    width: 75%;
+    gap: 1rem;
+    padding: 3rem 0;
+    justify-content: center;
+    text-align: center;
+}
+.white {
+    color: white;
+    font-size: 0.8rem;
+}
+.lr{
+    font-size: 2rem;
+    align-self: center;
+    font-weight: lighter;
+}
+.bullet{
+    padding: 0 2rem ;
+}
+.bullet li{
+    list-style: disc;
+    padding:0.5rem 0;
+}
+@media screen and (max-width: 1130px){
+    .sidebar{
+        display: none;
+    }
+}
